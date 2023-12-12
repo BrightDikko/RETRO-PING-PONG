@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RETRO PING PONG</title>
+    <link rel="stylesheet" href="styles/index.css"/>
+</head>
+<body>
+<script defer src="scripts/game.js"></script>
+
+<div id="titleContainer">
+    <h1>RETRO PING PONG GAME</h1>
+</div>
+<div id="homeContainer">
+
+    <div class="settingsContainer">
+        <h2>GAME SETTINGS</h2>
+    </div>
+
+    <div class="nameContainer">
+        <label>
+            <input
+                    type="text"
+                    placeholder="Enter your name"
+            />
+        </label>
+        <button id="saveButton">Submit</button>
+    </div>
+
+    <div id="matchUpContainer">
+        <div class="playerContainer">
+            <div class="playerInnerContainer1"></div>
+            <div class="playerInnerContainer2"><h3>PLAYER 1</h3></div>
+
+        </div>
+
+        <div id="vsContainer">
+            <h3>VS</h3>
+        </div>
+        <div class="cpuContainer">
+            <div class="cpuInnerContainer1"></div>
+            <div class="cpuInnerContainer2"><h3>C P U</h3></div>
+        </div>
+    </div>
+
+    <div class="selectTextureContainer">
+        <h2>CHOOSE BALL TEXTURE</h2>
+    </div>
+
+    <div id="ballTextureContainer">
+        <div id="texture1" data-texture="1"></div>
+        <div id="texture2" data-texture="2"></div>
+        <div id="texture3" data-texture="3"></div>
+        <div id="texture4" data-texture="4"></div>
+    </div>
+
+    <div>
+        <button id="startButton">Start Game</button>
+    </div>
+
+</div>
+
+<script>
+    var sound = new Howl({
+        src: ["./howler.js/examples/player/audio/80s_vibe.mp3"],
+        autoplay: true,
+        muted: false,
+    });
+</script>
+</body>
+</html>

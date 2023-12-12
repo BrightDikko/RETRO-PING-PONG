@@ -1,0 +1,290 @@
+body {
+    background-color: #e9d8a6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0 0 0 0;
+    background-image: url('../img/match-up-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+#titleContainer {
+    margin-bottom: 1%;
+    color: #540b0e;
+}
+
+#homeContainer {
+    background-color: #d4a373;
+    width: 40%;
+    height: 80%;
+    border-radius: 5%;
+    text-align: center;
+    border: 5px solid rgba(70, 53, 37, 0.36);
+}
+
+.settingsContainer {
+    margin-top: 7%;
+}
+
+.nameContainer {
+    margin-top: 4%;
+}
+
+input[type=text] {
+    height: 10%;
+    width: 40%;
+    background-color: transparent;
+    border: 2px solid #e9d8a6;
+    padding: 2% 3%;
+    margin: 0 5px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+input {
+    outline: none;
+}
+
+::placeholder {
+    color: #e9d8a6;
+    opacity: 1;
+}
+
+#saveButton {
+    background-color: #463525;
+    color: white;
+    height: 10%;
+    padding: 2.5% 3%;
+    width: 100px;
+    border: none;
+    margin: 8px 5px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+.selectTextureContainer {
+    margin-top: 50px;
+}
+
+#matchUpContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5% 5%;
+    height: 30%;
+}
+
+.playerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: #806144;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 4%;
+    padding: 1.5% 1.5%;
+    background-size: cover;
+    background-position: center;
+    color: #2b2117;
+    background-image: url('../img/match-up-bg.png');
+}
+
+.playerInnerContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9d8a6;
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 4%;
+    background-image: url('../img/player-controller.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.playerInnerContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.cpuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: #806144;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 4%;
+    padding: 1.5% 1.5%;
+    background-size: cover;
+    background-position: center;
+    color: #2b2117;
+    background-image: url('../img/match-up-bg.png');
+}
+
+.cpuInnerContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9d8a6;
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 4%;
+    background-image: url('../img/cpu-controller.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cpuInnerContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin-top: 1%;
+}
+
+
+.vsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#ballTextureContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin: 20px 50px;
+}
+
+#texture1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9d8a6;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url('../img/ball/ball1.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #e9e4d7;
+    color: #e9e4d7;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#texture2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9d8a6;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url('../img/ball/ball2.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #e9e4d7;
+    color: #e9e4d7;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#texture3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9d8a6;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: url('../img/ball/ball3.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #e9e4d7;
+    color: #e9e4d7;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#texture4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9d8a6;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-image: url('../img/ball/ball4.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #e9e4d7;
+    color: #e9e4d7;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.texture-selected {
+    transform: scale(1.25);
+    position: relative;
+}
+
+.texture-selected::after {
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+#startButton {
+    background-color: #463525;
+    color: white;
+    height: 50px;
+    padding: 12px 20px;
+    width: 200px;
+    border: none;
+    margin: 3% 0;
+    font-size: 1rem;
+    border-radius: 40px;
+
+}

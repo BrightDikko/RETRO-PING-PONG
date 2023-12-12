@@ -1,0 +1,234 @@
+body {
+    position: relative;
+    background-color: #e9d8a6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 90vh;
+    margin: 8vh 0 0;
+    background-image: url('../img/match-up-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#homeContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+}
+
+#homeInnerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    border-radius: 20px;
+    width: 90%;
+    height: 100%;
+    background-color: #71573d;
+    background-image: url('../img/scoreboard-bg.png');
+
+}
+
+#consoleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3% 3%;
+    flex: 0.4;
+}
+
+#matchUpContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+
+#scores {
+    font-size: 2.5em;
+    color: wheat;
+    text-align: center;
+}
+
+#winnerBoardContainer {
+    margin-top: 3%;
+    background-color: wheat;
+    padding: 0 8%;
+    border-radius: 10px;
+}
+
+#winnerBoard {
+    font-size: 1.7rem;
+    color: #211d18;
+    text-align: center;
+}
+
+#instructions {
+    font-size: 1.2rem;
+    color: wheat;
+    text-align: center;
+}
+
+.playerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: #806144;
+    height: 100%;
+    width: 30%;
+    border-radius: 50px;
+    margin: 0 4%;
+    padding: 1.5% 1.5%;
+    background-size: cover;
+    background-position: center;
+    color: #2b2117;
+    background-image: url('../img/match-up-bg.png');
+}
+
+.playerInnerContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9d8a6;
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 4%;
+    background-image: url('../img/player-controller.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.playerInnerContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin-top: 1%;
+}
+
+.cpuContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-color: #806144;
+    height: 100%;
+    width: 30%;
+    border-radius: 50px;
+    margin: 0 4%;
+    padding: 1.5% 1.5%;
+    background-size: cover;
+    background-position: center;
+    color: #2b2117;
+    background-image: url('../img/match-up-bg.png');
+}
+
+.cpuInnerContainer1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9d8a6;
+    height: 80%;
+    width: 100%;
+    border-radius: 20px;
+    margin: 0 4%;
+    background-image: url('../img/cpu-controller.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cpuInnerContainer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+    margin-top: 1%;
+}
+
+
+.vsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+
+#gameCanvas {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: backgroundColorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    width: 875px;
+    height: 575px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+@keyframes backgroundColorChange {
+    0% {
+        background-color: #7c755e;
+    }
+    25% {
+        background-color: #0b3448;
+    }
+    50% {
+        background-color: #b58e15;
+    }
+    75% {
+        background-color: #283618;
+    }
+    100% {
+        background-color: #021841;
+    }
+}
+
+#scoreboard {
+    text-align: center;
+    font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+    color: white;
+}
+
+
+#title {
+    background-color: rgb(35, 35, 19);
+    /*width: 640px;
+        height: 360px;
+        margin: auto;*/
+    font: "cursive";
+    text-align: center;
+    color: white;
+}
+
+#title1 {
+    color: rgb(35, 35, 19);
+}

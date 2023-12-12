@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RETO PING PONG</title>
+    <link rel="stylesheet" href="styles/game.css"/>
+</head>
+<body onload="setup();">
+<script src="scripts/three.min.js"></script>
+<script src="scripts/keyboard.js"></script>
+<script src="scripts/game.js"></script>
+<script src="./howler.js/dist/howler.min.js"></script>
+
+<div id="gameCanvas"></div>
+
+
+<div id="homeContainer">
+    <div id="homeInnerContainer">
+        <div id="consoleContainer">
+            <div id="winnerBoardContainer">
+                <h2 id="winnerBoard">GAME OF 7</h2>
+            </div>
+            <div>
+                <h2 id="instructions">
+                    To Move Left - Press "A" <br/> To Move Right - Press "D"
+                </h2>
+            </div>
+        </div>
+
+        <div id="matchUpContainer">
+            <div class="playerContainer">
+                <div class="playerInnerContainer1"></div>
+                <div class="playerInnerContainer2"><h3 id="playerName">PLAYER</h3></div>
+
+            </div>
+
+            <div id="vsContainer">
+                <h1 id="scores">0-0</h1>
+            </div>
+
+            <div class="cpuContainer">
+                <div class="cpuInnerContainer1"></div>
+                <div class="cpuInnerContainer2"><h3>C P U</h3></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var sound = new Howl({
+        src: ["./howler.js/examples/player/audio/80s_vibe.mp3"],
+        autoplay: true,
+        muted: false,
+    });
+</script>
+</body>
+</html>
+
